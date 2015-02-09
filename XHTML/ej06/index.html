@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rellena tu CV</title>
+</head>
+<body>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="post" enctype="multipart/form-data">
+
+<h1>Información del producto</h1>	
+
+<fieldset>
+<legend>Datos básicos</legend>
+		<label for="nombre">Nombre</label><br/>
+		<input id="nombre" name="nombre" type="text"><br/>
+		
+		<label for="descripcion">Descripción</label><br/>
+		<textarea id="descripcion" name="descripcion" type="textarea" ></textarea><br/>
+		
+<label for="foto">Foto</label><input type="file" name="foto"><br/>
+<input name="contador" type="checkbox" value="1"checked><label for="contador">Añadir contador de visitas</label>	
+</fieldset>
+<fieldset>
+<legend>Datos económicos</legend>
+		<label for="precio">Precio</label><br/>
+		<input id="precio" name="precio" type="text" size="6">€&nbsp
+		<label for="impuestos">Impuestos</label>
+		<select id="impuestos" name="impuestos" multiple>
+		<option value="4">4%</option>
+		<option value="7">7%</option>
+		<option value="16">16%</option>
+		<option value="21">21%</option>
+		</select><br/>
+		<label for="promocion">Promoción</label><br/>
+		<input name="promocion"type="radio" value="none"><span>Ninguno</span><br/>
+		<input name="promocion"type="radio" value="free"><span>Transporte gratuito</span><br/>
+		<input name="promocion"type="radio" value="5"><span>Descuento del 5%</span><br/>
+
+</fieldset>
+
+
+<input type="submit">
+
+
+	</form>
+</body>
+</html>
