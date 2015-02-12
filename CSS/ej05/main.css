@@ -1,0 +1,167 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+
+body{
+    font:400 12pt/1.6em Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin:0 auto;
+    width:960px;
+}
+
+ul{
+    margin:0;padding:0;
+}
+
+.header {
+    background-color: #000;
+    color:white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.header a,
+.header a:visited,
+.header a:link,
+.header a.active {
+    color: #FFF;
+    border-color: #fff;
+}
+.nav li {
+    margin:0 0.5em;
+    display:inline;
+}
+
+h1 {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.article {
+    margin:0 25px;
+}
+
+.h2 {
+    display:block;
+    color:#000;
+    font-size: 1.1em;
+}
+
+.article .h2 {
+    margin-top:1em;
+    margin-bottom:0.2em;
+}
+
+.article .h2 a {
+    color:#000;
+    border-color: #000;
+}
+
+.article .date {
+    float:right;
+}
+
+.article a {
+    border-color:#00E;
+}
+
+.archive ul>li {font-weight:bold;}
+.archive ul>li ul {padding-right:3em;}
+
+.archive li {
+    list-style: none;
+}
+
+.archive ul ul {
+    padding: 0 3em;
+}
+
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    border-bottom:1px dotted transparent;
+}
+
+/* post y comentarios */
+
+.comments {
+    border-top: 2px dotted gray;
+    margin-top:4em;
+    width:100%;
+}
+
+.comments h3 {
+    margin-top:-2em;
+}
+
+.comment {
+    margin: 1em 0;
+    border-bottom:1px solid #dedede;
+}
+
+.comment>img {
+    width:75px;
+    height:75px;
+    float:left;
+}
+.comment .content {
+    float:right;
+    width:90%;
+}
+
+.comment .content .head {
+    padding-top: 1em;
+}
+
+.comment .content .head a {
+    margin-right: 1em;
+}
+
+.comment .content .head span {
+    font-size: 0.8em;
+}
+
+.comment .content p {
+    font-size:0.9em;
+}  
+
+/* tabla */
+table {
+    border:solid #dedede 6px;
+}
+
+table thead,table tfoot {
+    border:2px solid #dedede;
+    background:#dedede;
+    font-weight: bold;
+}
+
+table td {width:16.666666%;padding:0.2em;}
+table tr {border:1px solid #dedede;}
+
+.fdata {
+    border:1px dotted green;
+}
+
+.form label, .form input, .form textarea{
+    display:block;
+}
+
+.form .row * {
+    padding:0.2em;
+}
