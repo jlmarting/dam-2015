@@ -1,0 +1,23 @@
+/*
+first-child
+first-of-type
+nth-child
+ */
+
+
+
+li:first-child{
+    color:blue
+}
+
+li:nth-child(3){
+    font-size:1.5em;
+}
+
+li:nth-last-child{
+    font-size:2em;
+}
+
+.wrapper .last:first-child {
+    color:blue;
+};

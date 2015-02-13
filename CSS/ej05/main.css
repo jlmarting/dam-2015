@@ -143,6 +143,8 @@ a:visited {
 /* tabla */
 table {
     border:solid #dedede 6px;
+    border-collapse:collapse;
+    width:100%;
 }
 
 table thead,table tfoot {
@@ -152,7 +154,10 @@ table thead,table tfoot {
 }
 
 table td {width:16.666666%;padding:0.2em;}
+table tbody>tr>td:last-child{text-align: right;}
 table tr {border:1px solid #dedede;}
+
+
 
 .fdata {
     border:1px dotted green;

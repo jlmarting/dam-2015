@@ -1,0 +1,18 @@
+html,
+body {
+    width:100%;
+    height:100%;
+    }
+
+
+body {
+    background-image:
+    url('ribbon.png'),
+    url('decoration.png'),
+    url('old_paper.jpg');
+    background-repeat: no-repeat;
+    background-position: 
+    bottom right, 
+    top left,
+    center center;
+}
