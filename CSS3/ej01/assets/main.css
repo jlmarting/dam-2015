@@ -21,3 +21,7 @@ li:nth-last-child{
 .wrapper .last:first-child {
     color:blue;
 };
+
+.last p{
+    font-family: 'Meddon', cursive;
+}

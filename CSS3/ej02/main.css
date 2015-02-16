@@ -15,4 +15,5 @@ body {
     bottom right, 
     top left,
     center center;
+    background-size: auto, auto, cover;
 }
