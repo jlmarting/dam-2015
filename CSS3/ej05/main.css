@@ -1,0 +1,103 @@
+        body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+        }
+        .snowflake.f1 {
+            left: 40px;
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+        }
+        .snowflake.f3 {
+            left: 200px;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+        }
+
+/* Modificaciones */
+.snowflake{
+    animation-duration: 3s;
+    animation-name: nevando;
+    animation-iteration-count: infinite;
+}
+
+.snowflake.f1{
+    animation-timing-function:  linear;
+    animation-duration: 3s, 3s;
+    animation-name: nevando, vientoeste;
+    animation-iteration-count:infinite;
+}
+
+.snowflake.f2{
+    animation-timing-function:  linear;
+    animation-duration: 4s, 3s;
+    animation-name: nevando, vientoeste;
+}
+
+.snowflase.f4{
+    animation-delay:1s;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+
+.snowflake.f3{
+    animation-timing-function: linear;
+    animation-duration: 4s, 3s;
+    animation-name: nevando, vientooeste;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes nevando{
+    from{
+        top:-10%;
+    }
+    to {
+        top:110%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vientoeste{
+    0%{
+        transform:translateX(5px);
+    }
+    25%{
+        transform:translateX(45px);
+    }
+    75%{
+        transform:translateX(-5px);
+    }
+    100%{
+        transform:translateX(15px);
+    }
+
+} 
+
+@keyframes vientooeste{
+    0%{
+        transform:translateX(-5px);
+    }
+    25%{
+        transform:translateX(-45px);
+    }
+    75%{
+        transform:translateX(5px);
+    }
+    100%{
+        transform:translateX(-15px);
+    }
+} 

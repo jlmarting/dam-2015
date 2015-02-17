@@ -2,3 +2,27 @@ div{
     column-widtht: 5em;
     border:1px dotted red;
 }
+
+
+#A,#B {
+    width: 200px;
+    height: 200px;
+    top: 25%;
+    position:absolute;
+}
+
+
+#A {
+        left: 25%;
+    background: red;
+}
+
+#B {
+    left: 75%;
+    background: blue;
+}
+
+#A:hover {
+    animation-duration: 3s;
+    transform: rotate(85deg);
+}
