@@ -76,24 +76,24 @@ body {
 /* Estados iniciales */
 
 .view .mask {
-  transition-duration: 1s;
+  background-color: rgba(219,127,8, 0);
+  transition-duration: 400ms;
   transition-property:all;
-  opacity:0;
 }
 
 .view img{
-  transition-duration: 4s;
+  transition-duration: 400ms;
   transition-property:all;
 }
 
 .view h2 {
-  top:-100px;
+  transform:translateY(-100px);
   transition-duration: 2s;
   transition-property:all;
 }
 
 .view p {
-  top: 1000px;
+  transform: translateY(500px);
   transition-duration: 2s;
   transition-property:all;
 } 
@@ -111,7 +111,7 @@ body {
 }
 
 .view:hover p {
-    transform: translateY(-1000px);
+    transform: translateY(0);
 }
 
 .view:hover a.info {
@@ -119,9 +119,9 @@ body {
 }
 
 .view:hover h2 {
-  transform: translateY(100px);
+  transform: translateY(0);
 }
 
 .view:hover .mask{
-  opacity:1;
+   background-color: rgba(219,127,8, 0.7);
 }

@@ -23,20 +23,23 @@
 
 #second {
     animation-name: vuelta;
-    animation-duration: 6s;
+    animation-duration: 1.0s;
     animation-iteration-count: infinite;
+    animation-timing-function: steps(60,end);
 }
 
 #minute {
     animation-name: vuelta;
-    animation-duration: 360s;
+    animation-duration: 60.0s;
     animation-iteration-count: infinite;
+    animation-timing-function: steps(60,end);
 }
 
 #hour{
     animation-name: vuelta;
-    animation-duration: 21800s;
+    animation-duration: 735.0s;
     animation-iteration-count: infinite;
+    animation-timing-function: steps(60,end);
 } 
 
 
@@ -50,4 +53,3 @@
     }
 
 }
-
