@@ -8,12 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-<div class="header nav navbar-inverse fixed">
-<button type="button" class="navbar-toggle collapse"></button>
-<span class="icon-bar">dddd</span>
-<span class="icon-bar">fffff</span>
-<span class="icon-bar">ggggg</span>
-<span class="icon-bar">hhhhh</span>
+
+<nav class="navbar navbar-default">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Take a tour</a></li>
+        <li><a href="#">Buy a ticket</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>      
+    </div>
+
+</nav>
 
     <div class="container">
             <h1>Testing Bootstrap</h1>        
@@ -40,20 +61,20 @@
         </div> 
 
      <div class="row text-center features">
-         <div class="col-xs-12 col-md-4">
+         <div class="col-xs-offset-3 col-sm-offset-0 col-xs-6 col-md-4">
                 <span class="glyphicon glyphicon-briefcase"></span>  
                 <h3>Here we go</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptatibus tenetur eum. Incidunt consequuntur quod ut voluptates, ipsa maxime ex quidem vel, dolores velit nesciunt doloribus natus illo! Quod, labore.</p>             
          </div>
 
     
-         <div class="col-xs-12 col-md-4">
+         <div class="col-xs-6 col-md-4">
             <span class="glyphicon glyphicon-random"></span>  
                 <h3>The very best of all</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptatibus tenetur eum. Incidunt consequuntur quod ut voluptates, ipsa maxime ex quidem vel, dolores velit nesciunt doloribus natus illo! Quod, labore.</p>             
          </div>
      
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-6 col-md-4">
                    <span class="glyphicon glyphicon-send"></span>  
                 <h3>Breaking news!</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptatibus tenetur eum. Incidunt consequuntur quod ut voluptates, ipsa maxime ex quidem vel, dolores velit nesciunt doloribus natus illo! Quod, labore.</p>             
@@ -99,8 +120,8 @@
 </div>
 </div>
 
-
-
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 
     
 </body>
