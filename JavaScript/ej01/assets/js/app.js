@@ -23,10 +23,10 @@
 
 
     console.log(validarDNI("44148828Y") === true);
-    console.log(validarDNI("44148828Y") === false);
-    console.log(validarDNI("00000008Y") === false);
-    console.log(validarDNI("44") === true);
-    console.log(validarDNI("44148828") === true);
-    console.log(validarDNI("") === true);
+    console.log(validarDNI("44148822Y") === false);
+    console.log(validarDNI("00000000Y") === false);
+    console.log(validarDNI("44") === false);
+    console.log(validarDNI("44148828") === false);
+    console.log(validarDNI("") === false);
 
 })();
