@@ -13,7 +13,7 @@
 
     var test = function(param, res){
         try{
-            console.log((param) === res);
+            console.log( (param) === res);
         }catch(e){
             console.log ('e.message');
         }finally {
