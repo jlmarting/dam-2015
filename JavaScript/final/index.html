@@ -14,14 +14,15 @@
             <legend>Registro</legend>
             <label for="registro_nombre">Nombre:</label><input class="required" type="text" name="nombre" id="registro_nombre">
             <label for="registro_apellidos">Apellido:</label><input class="required" type="text" name="apellido" id="registro_apellido">
-            <label for="registro_email">Email:</label><input class="required" type="text" name="email" id="registro_email">
-            <label for="registro_password">Password:</label><input class="required" type="password" name="password" id="registro_password">
-            <label for="registro_comentarios">Comentarios:</label><textarea name="comentarios" id="registro_comentarios" rows="10"></textarea>
+            <label for="registro_email">Email:</label><input class="email" type="text" name="email" id="registro_email">
+            <label for="registro_password">Password:</label><input class="password" type="password" name="password" id="registro_password">
+            <label for="registro_comentarios">Comentarios:</label><textarea name="comentarios" id="registro_comentarios" rows="10" class="maxlong"></textarea>
             <input type="checkbox" name="condiciones" id="registro_condiciones" value="1"><label for="registro_condiciones">Acepto las condiciones del servicio.</label>
-            <input class="required" type="submit" value="Enviar">
+            <input type="submit" value="Enviar">
         </fieldset>
     </form>
-    <script type="text/javascript" src="assets/js/validador.js"></script>
-    <script type="text/javascript" src="assets/js/code.js"></script>
+
+    <script type="text/javascript" src="assets/js/validator.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
