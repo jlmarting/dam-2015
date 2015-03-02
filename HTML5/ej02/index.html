@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Video player</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <video id="player" src=""></video>
+        <div class="row">
+            <button id="init" class="btn btn-default">Iniciar</button>
+            <button id="pause" class="btn btn-default">Pausa</button>
+            <button id="stop" class="btn btn-default">Parar</button>
+            <button id="forward" class="btn btn-default">Avanzar</button>
+            <button id="back" class="btn btn-default">Retroceder</button>
+            <button id="begin" class="btn btn-default">Inicio</button>
+            <button id="end" class="btn btn-default">Fin</button>
+            <button id="fullscreen" class="btn btn-default">Pantalla completa</button>
+            <input id="volume" type="range">
+            <progress id="progress"></progress>
+        </div>
+    </div>
+
+    <div class="tracklist">
+        <ul>
+            <li data-src="videos/Teahupoo">Teahupoo</li>
+            <li data-src="videos/BMX">BMX</li>
+            <li data-src="videos/F1">Formula</li>
+        </ul>
+
+
+    </div>
+
+    <script src="assets/js/app2.js"></script>
+</body>
+
+</html>
