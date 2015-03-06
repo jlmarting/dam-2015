@@ -14,8 +14,10 @@ window.onload = function() {
         fullscreen = document.getElementById('fullscreen'),
         volume = document.getElementById('volume'),
         progress = document.getElementById('progress'),
-        playlist = docomet.querySelectorAll('#tracklist li');
+        playlist = document.querySelectorAll('#tracklist li');
 
+    
+    // Inicialización
     player.src = "videos/F1.webm";
     player.controls = true;
     progress.min = 0;
