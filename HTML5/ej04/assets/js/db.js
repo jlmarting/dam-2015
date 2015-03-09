@@ -66,9 +66,9 @@ APP.DB = (function() {
 
                         var datos = [];
 
-                        for (var i = result.rows.length - 1; i >= 0; i--) {
-                            console.log(result.rows.item(i));
-                            datos.push(result.rows.item(i));
+                        for (var i = results.rows.length - 1; i >= 0; i--) {
+                            console.log(results.rows.item(i));
+                            datos.push(results.rows.item(i));
                         }
 
                         success(datos);
