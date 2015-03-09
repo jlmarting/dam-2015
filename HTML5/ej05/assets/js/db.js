@@ -14,11 +14,20 @@ APP.DB = (function() {
                 // indexeddb no requiere especificar tamaño
         };
 
+    /*
+    Creamos la función init para evitar problemas de dependencias debidas
+    al asincronismo (especialmente al acceder a db).
+    */
 
     var init = function(success) {
-        if (!db) { // si no se ha creado
+        if (!db) {
 
-            /* Se abre la base de datos */
+            /* No tenemos acceso al objeto de base de datos.
+
+            Abrimos una conexión y gestionamos dos eventos:
+                - success: ejecutamos el callback.
+                - upgradeneeded: control de versiones y creación de bd
+            */
 
             var request = indexedDB.open(cfg.name, cfg.version); //nombre y versión
 
@@ -31,7 +40,6 @@ APP.DB = (function() {
             });
 
 
-            // Cambio de versiones
             request.addEventListener('upgradeneeded', function(e) {
                 console.log('Upgrade needed!');
                 db = e.target.result;
@@ -54,7 +62,8 @@ APP.DB = (function() {
 
 
 
-        } else { // si se ha creado
+        } else {
+            /* Ya tenemos acceso a la bd. Ejecutamos la función de callback (success) */
             console.log('succcess function: ' + success);
             console.log(db);
             success();
@@ -79,7 +88,7 @@ APP.DB = (function() {
             var store = transaction.objectStore('tweets');
 
             var getRequest = store.get(id);
-            getRequest.addEventListener('success', function(e){
+            getRequest.addEventListener('success', function(e) {
                 console.log(e.target.result);
             });
         });
@@ -90,7 +99,7 @@ APP.DB = (function() {
 
     return { //aquí meteremos los métodos que deseemos que sean públicos
         "insert": insert,
-        "get" : get
+        "get": get
     };
 
 
